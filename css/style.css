@@ -10,8 +10,10 @@
 	--fz-2: 14px;
 	--fz-3: 16px;
 	--fz-4: 24px;
-	--fz-5: 40px;
-	--fz-6: 46px;
+	--fz-5: 32px;
+	--fz-6: 36px;
+	--fz-7: 40px;
+	--fz-8: 46px;
 
 	--color-main-light: #FFFFFF;
 	--color-main-dark: #343045;
@@ -107,6 +109,7 @@ nav[role="primary"] {
 /*HERO========================================================================*/
 
 #hero {
+	position: relative;
 	padding: 300px 84px 63px;
 	display: flex;
 	flex-direction: column;
@@ -114,15 +117,30 @@ nav[role="primary"] {
 	align-items: center;
 }
 
+#hero::before {
+	content: url(../img/bg-line-left.png);
+	position: absolute;
+	z-index: -1;
+	inset: 23% 0;
+}
+
 .hero-header {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: start;
 	column-gap: 308px;
 }
 
 .hero-header picture {
 	width: 490px;
+	position: relative;
+}
+
+.hero-header picture::before {
+	content: url(../img/bg-lines-bunch.png);
+	position: absolute;
+	z-index: -1;
+	inset: -60% -30%;
 }
 
 .hero-welcome {
@@ -133,7 +151,7 @@ nav[role="primary"] {
 
 .hero-welcome h1  {
 	font-weight: var(--fw-bold);
-	font-size: var(--fz-5);
+	font-size: var(--fz-7);
 	line-height: 49px;
 	color: var(--color-main-light);
 	margin-bottom: 36px;
@@ -141,7 +159,7 @@ nav[role="primary"] {
 
 .hero-welcome h1 span {
 	font-weight: inherit;
-	font-size: var(--fz-6);
+	font-size: var(--fz-8);
 	line-height: 56px;
 	background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
 	-webkit-background-clip: text;
