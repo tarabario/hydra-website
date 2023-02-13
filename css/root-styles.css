@@ -1,0 +1,43 @@
+:root {
+	--ff-main: "Montserrat", sans-serif;
+
+	--fw-reg: 400;
+	--fw-bold: 700;
+
+	--fz-1: calc(12/1440*100vw);
+	--fz-2: calc(14/1440*100vw);
+	--fz-3: calc(16/1440*100vw);
+	--fz-4: calc(24/1440*100vw);
+	--fz-5: calc(32/1440*100vw);
+	--fz-6: calc(36/1440*100vw);
+	--fz-7: calc(40/1440*100vw);
+	--fz-8: calc(46/1440*100vw);
+
+	--color-main-light: #FFFFFF;
+	--color-main-dark: #343045;
+	--color-bg: rgb(48, 44, 66);
+}
+
+body {
+	overflow-x: hidden;
+	position: relative;
+	font-family: var(--ff-main);
+	background-color: var(--color-bg);
+}
+
+a{
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.button-gradient {
+	font-weight: var(--fw-bold);
+	font-size: var(--fz-1);
+	color: var(--color-main-dark);
+	text-transform: uppercase;
+	background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+	border-radius: 40px;
+}

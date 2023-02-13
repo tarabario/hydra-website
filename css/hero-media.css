@@ -1,0 +1,116 @@
+@media (max-width: 450px) {
+	#hero {
+		overflow-x: hidden;
+		row-gap: calc(53/390*100vw);
+		padding: calc(143/390*100vw) calc(20/390*100vw) calc(38/390*100vw);
+		box-shadow: inset 0px calc(130/390*100vw) 30px 0px var(--color-bg),
+					inset 0px calc(-410/390*100vw) 50px 0px var(--color-bg);
+	}
+
+	.hero-row-1 {
+		flex-direction: column-reverse;
+		row-gap: calc(40/390*100vw);
+		padding: 0 calc(15/390*100vw);
+	}
+	.hero-row-1 img {
+		width: 100%;
+	}
+	.hero-welcome {
+		row-gap: calc(20/390*100vw);
+		width: calc(298/390*100vw);
+	}
+	.hero-welcome h1 {
+		font-size: calc(24/390*100vw);
+		line-height: calc(29/390*100vw);
+		text-align: center;
+	}
+	.hero-welcome h1 span:nth-child(1) {
+		font-size: calc(36/390*100vw);
+		line-height: calc(44/390*100vw);
+	}
+	.hero-welcome h1 span:nth-child(2) {
+		font-size: calc(32/390*100vw);
+		line-height: calc(49/390*100vw);
+	}
+	.hero-welcome p {
+		display: none;
+	}
+	.hero-welcome a {
+		font-size: calc(14/390*100vw);
+		line-height: calc(17/390*100vw);
+		width: calc(292/390*100vw);
+		height: calc(52/390*100vw);
+	}
+	.hero-welcome a::after {
+		display: none;
+	}
+
+	.bg-line-bunch{
+		transform: translate(20%, 76%) scale(3.1);
+	}
+	.bg-line-left {
+		display: none;
+	}
+
+	.hero-row-2 {
+		padding: 0;
+	}
+	.hero-support {
+		position: relative;
+		width: 100%;
+		height: calc(109/390*100vw);
+	}
+	.card-viewer {
+		justify-content: start;
+		width: calc(277/390*100vw);
+		overflow: hidden;
+	}
+	.button-previous,
+	.button-next {
+		display: unset;
+		position: absolute;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		width: calc(22.5/390*100vw);
+	}
+	.button-previous {
+		left: calc(10/390*100vw);
+	}
+	.button-next {
+		right: calc(10/390*100vw);
+	}
+	.support-card {
+		width: calc(277/390*100vw);
+		column-gap: calc(10/390*100vw);
+		padding: calc(20/390*100vw) calc(22/390*100vw);
+	}
+	.support-card:nth-child(2) {
+		border: none;
+	}
+	.support-card:nth-child(1) img {
+		width: calc(30/390*100vw);
+	}
+	.support-card:nth-child(2) img {
+		width: calc(40/390*100vw);
+	}
+	.support-card:nth-child(3) img {
+		width: calc(48/390*100vw);
+	}
+	.support-card p {
+		display: none;
+	}
+	.support-card a {
+		white-space: normal;
+		font-size: calc(14/390*100vw);
+		line-height: calc(17/390*100vw);
+	}
+	.support-card:nth-child(2) {
+		/* display: none;
+		visibility: hidden; */
+	}
+	.support-card:nth-child(3) {
+		/* display: none;
+		visibility: hidden; */
+	}
+}

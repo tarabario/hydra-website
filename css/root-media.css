@@ -1,0 +1,10 @@
+@media (max-width: 450px) {
+	body.blur section > *,
+	body.blur .header-logo {
+		filter: blur(40px);
+	}
+
+	section > * {
+		transition: filter .5s;
+	}
+}
