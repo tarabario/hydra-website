@@ -49,20 +49,22 @@
 		display: none;
 	}
 
+
 	.hero-row-2 {
-		padding: 0;
+		
 	}
-	.hero-support {
+	.hero-row-2 {
 		position: relative;
 		width: 100%;
 		height: calc(109/390*100vw);
+		padding: 0;
 	}
 	.card-viewer {
 		justify-content: start;
 		width: calc(277/390*100vw);
 		overflow: hidden;
 	}
-	.button-previous,
+	.button-prev,
 	.button-next {
 		display: unset;
 		position: absolute;
@@ -71,7 +73,7 @@
 		background-color: transparent;
 		width: calc(22.5/390*100vw);
 	}
-	.button-previous {
+	.button-prev {
 		left: calc(10/390*100vw);
 	}
 	.button-next {

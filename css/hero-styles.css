@@ -63,7 +63,7 @@
 	background: url(../icons/arrow.svg) center center / cover no-repeat;
 }
 
-.hero-support {
+.hero-row-2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -85,7 +85,7 @@
 	align-items: center;
 }
 
-.button-previous,
+.button-prev,
 .button-next {
 	display: none;
 }
