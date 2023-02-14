@@ -21,6 +21,7 @@
 		justify-content: space-between;
 		align-items: center;
 		row-gap: calc(40/390*100vw);
+		background: unset;
 	}
 	.about-row-2 > img {
 		width: 100%;

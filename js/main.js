@@ -39,4 +39,5 @@ window.addEventListener('resize', function() {
 		cardsSlider.style.transform = `translateX(0)`;
 	}
 })
-
+const heroSupport = buttonPrev.parentElement;
+console.log(heroSupport);

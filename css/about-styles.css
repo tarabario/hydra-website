@@ -3,7 +3,7 @@
 	padding: 0 calc(84/1440*100vw);;
 	display: flex;
 	flex-direction: column;
-	row-gap: calc(100/1440*100vw);                   
+	row-gap: calc(100/1440*100vw);    
 }
 
 .about-row-1 {
@@ -25,6 +25,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background: url(../img/about-bg.png) center center / contain no-repeat;             
 }
 .about-row-2 > img {
 	width: calc(524/1440*100vw);
