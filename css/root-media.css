@@ -3,8 +3,20 @@
 	body.blur .header-logo {
 		filter: blur(40px);
 	}
-
 	section > * {
 		transition: filter .5s;
+	}
+
+	.button-gradient {
+		font-size: var(--fz-mob-2);
+	}
+
+	.title {
+		font-size: var(--fz-mob-5);
+		line-height: calc(40/390*100vw);
+		text-align: center;
+	}
+	.title.arrowed::after {
+		display: none;
 	}
 }

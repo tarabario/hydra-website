@@ -1,7 +1,8 @@
 @media (max-width: 450px) {
 	header {
 		justify-content: space-between;
-		padding: calc(25/390*100vw) calc(20/390*100vw);
+		padding: calc(25/390*100vw) calc(20/390*100vw) calc(100/390*100vw);
+		box-shadow: inset 0px calc(130/390*100vw) 20px 0px var(--color-bg);
 	}
 	.header-logo {
 		column-gap: calc(10/390*100vw);
@@ -42,7 +43,7 @@
 	.nav-right li a:nth-child(1) {
 		width: calc(155/390*100vw);
 		height: calc(48/390*100vw);
-		font-size: calc(16/390*100vw);
+		font-size: var(--fz-mob-3);
 	}
 	.hamburger {
 		z-index: 2;

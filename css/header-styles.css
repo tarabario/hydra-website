@@ -11,11 +11,12 @@ a {
 }
 
 header {
-	position: absolute;
+	position: fixed;
 	z-index: 2;
 	inset: auto 0;
 	column-gap: calc(205/1440*100vw);
-	padding: calc(50/1440*100vw) calc(84/1440*100vw) 0;
+	padding: calc(50/1440*100vw) calc(84/1440*100vw) calc(100/1440*100vw);
+	box-shadow: inset 0px calc(200/1440*100vw) 20px 0px var(--color-bg);
 }
 
 nav[role="primary"] {
@@ -39,7 +40,6 @@ nav[role="primary"] {
 .nav-left li a {
 	font-weight: var(--fw-bold);
 	font-size: var(--fz-1);
-	color: var(--color-main-light);
 	text-transform: uppercase;
 }
 
@@ -55,7 +55,6 @@ nav[role="primary"] {
 .nav-right li:nth-child(1) a {
 	font-weight: var(--fw-bold);
 	font-size: var(--fz-1);
-	color: var(--color-main-light);
 	text-transform: uppercase;
 	border: 2px solid var(--color-main-light);
 	border-radius: 40px;
