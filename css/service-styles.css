@@ -22,10 +22,16 @@
 	align-items: center;
 }
 
+.service-button-prev,
+.service-button-next {
+	display: none;
+}
+
 .service-cards-slider {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: calc(10/1440*100vw);
 }
 
 .service-card {

@@ -85,10 +85,14 @@ ul {
 	position: relative;
 }
 .title.arrowed::after {
-	content: url(../icons/arrow-long.svg);
+	content: '';
 	position: absolute;
+	display: inline-block;
+	width: calc(200/1440*100vw);
+	height: calc(33/1440*100vw);
+	background: url(../icons/arrow-long.svg) 0 0 / contain no-repeat;
 	margin-left: calc(20/1440*100vw);
-	transform: translateY(7%)
+	transform: translateY(15%);
 }
 .title > span {
 	font-weight: var(--fw-light);

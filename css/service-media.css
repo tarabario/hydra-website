@@ -18,10 +18,14 @@
 
 	.service-button-prev,
 	.service-button-next {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: calc(38/390*100vw);
 		height: calc(38/390*100vw);
 		border-radius: 50%;
 		background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+		outline: calc(9/390*100vw) solid rgba(14, 14, 14, 0.32);
 	}
 	.service-button-prev {
 		left: calc(18/390*100vw);
@@ -29,11 +33,19 @@
 	.service-button-next {
 		right: calc(18/390*100vw);
 	}
+	.service-button-prev > img,
+	.service-button-next > img {
+		width: calc(11/390*100vw);
+	}
+	.service-button-prev > img {
+		transform: translateX(-15%);
+	}
+	.service-button-next > img {
+		transform: translateX(15%);
+	}
 
 	.service-cards-slider {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		column-gap: unset;
 	}
 
 	.service-card {
