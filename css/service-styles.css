@@ -29,7 +29,7 @@
 
 .service-cards-slider {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	column-gap: calc(10/1440*100vw);
 }
