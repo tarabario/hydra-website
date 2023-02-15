@@ -1,43 +1,40 @@
+//hamburger navigation menu
 const hamburger = document.querySelector('.hamburger');
 const headerNav = document.querySelector('nav[role="primary"]');
 
-const buttonPrev = document.querySelector('.button-previous');
-const buttonNext = document.querySelector('.button-next');
-const supportCards = document.querySelectorAll('.support-card');
-const cardsSlider = document.querySelector('.cards-slider');
-
-window.addEventListener('resize', function() {
-	if (this.innerWidth <= 450) {
-		hamburger.addEventListener('click', () => {
-			hamburger.classList.toggle('to-cross-mark');
-			document.body.classList.toggle('blur');
-			headerNav.classList.toggle('show');
-		})
-
-		let activeCardIndex = 0;
-
-		buttonNext.addEventListener('click', () => {
-			if (activeCardIndex === (supportCards.length - 1)) {
-				activeCardIndex = 0;
-				cardsSlider.style.transform = `translateX(0)`;
-			} else {
-				activeCardIndex++;
-				cardsSlider.style.transform = `translateX(-${activeCardIndex * (100 / supportCards.length)}%)`;
-			}
-		});
-
-		buttonPrev.addEventListener('click', () => {
-			if (activeCardIndex === 0) {
-				activeCardIndex = (supportCards.length - 1);
-				cardsSlider.style.transform = `translateX(-${activeCardIndex * (100 / supportCards.length)}%)`;
-			} else {
-				activeCardIndex--;
-				cardsSlider.style.transform = `translateX(-${activeCardIndex * (100 / supportCards.length)}%)`;
-			}
-		});
-	} else if (this.innerWidth > 450) {
-		cardsSlider.style.transform = `translateX(0)`;
-	}
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('to-cross-mark');
+	document.body.classList.toggle('blur');
+	headerNav.classList.toggle('show');
 })
-const heroSupport = buttonPrev.parentElement;
-console.log(heroSupport);
+
+
+//carousel sliders
+const buttonsPrev = document.querySelectorAll('.button-prev');
+
+buttonsPrev.forEach(buttonPrev => {
+	const slider = buttonPrev.parentElement.querySelector('.cards-slider');
+	const cards = slider.children;
+	const buttonNextCompanion = buttonPrev.parentElement.querySelector('.button-next');
+	let activeCardIndex = 0;
+
+	buttonPrev.addEventListener('click', () => {
+		if (activeCardIndex === 0) {
+			activeCardIndex = (cards.length - 1);
+		} else {
+			activeCardIndex--;
+		}
+
+		slider.style.transform = `translateX(-${activeCardIndex * (100 / cards.length)}%)`;
+	});
+
+	buttonNextCompanion.addEventListener('click', () => {
+		if (activeCardIndex === (cards.length - 1)) {
+			activeCardIndex = 0;
+			slider.style.transform = 'translateX(0)';
+		} else {
+			activeCardIndex++;
+			slider.style.transform = `translateX(-${activeCardIndex * (100 / cards.length)}%)`;
+		}
+	});
+});

@@ -1,8 +1,8 @@
 @media (max-width: 450px) {
 	#hero {
 		row-gap: calc(53/390*100vw);
-		padding: calc(143/390*100vw) calc(20/390*100vw) calc(38/390*100vw);
-		box-shadow: inset 0px calc(-410/390*100vw) 50px 0px var(--color-bg);
+		padding: calc(143/390*100vw) calc(20/390*100vw) 0;
+		box-shadow: inset 0px calc(-380/390*100vw) 50px 0px var(--color-bg);
 	}
 
 	.hero-row-1 {
@@ -42,41 +42,32 @@
 		display: none;
 	}
 
-	.bg-line-bunch{
+	.hero-bg-line-bunch{
 		transform: translate(20%, 76%) scale(3.1);
 	}
-	.bg-line-left {
+	.hero-bg-line-left {
 		display: none;
 	}
 
-
-	.hero-row-2 {
-		
-	}
 	.hero-row-2 {
 		position: relative;
 		width: 100%;
 		height: calc(109/390*100vw);
 		padding: 0;
 	}
-	.card-viewer {
+	.hero-card-viewer {
 		justify-content: start;
 		width: calc(277/390*100vw);
 		overflow: hidden;
 	}
-	.button-prev,
-	.button-next {
-		display: unset;
-		position: absolute;
-		border: none;
-		outline: none;
-		background-color: transparent;
+	.hero-button-prev,
+	.hero-button-next {
 		width: calc(22.5/390*100vw);
 	}
-	.button-prev {
+	.hero-button-prev {
 		left: calc(10/390*100vw);
 	}
-	.button-next {
+	.hero-button-next {
 		right: calc(10/390*100vw);
 	}
 	.support-card {
@@ -103,13 +94,5 @@
 		white-space: normal;
 		font-size: var(--fz-mob-2);
 		line-height: calc(17/390*100vw);
-	}
-	.support-card:nth-child(2) {
-		/* display: none;
-		visibility: hidden; */
-	}
-	.support-card:nth-child(3) {
-		/* display: none;
-		visibility: hidden; */
 	}
 }

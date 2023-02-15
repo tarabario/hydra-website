@@ -61,7 +61,22 @@ ul {
 	background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
 	border-radius: 40px;
 }
+.button-prev,
+.button-next {
+	display: none;
+}
 
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.section-header > p {
+	width: calc(652/1440*100vw);
+	font-weight: var(--fw-reg);
+	font-size: var(--fz-3);
+	line-height: calc(24/1440*100vw);
+}
 .title {
 	font-weight: var(--fw-bold);
 	font-size: var(--fz-7);

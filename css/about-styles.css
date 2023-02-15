@@ -6,26 +6,15 @@
 	row-gap: calc(100/1440*100vw);    
 }
 
-.about-row-1 {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 .about-row-1 > .title {
 	width: calc(298/1440*100vw);
-}
-.about-row-1 > p {
-	width: calc(652/1440*100vw);
-	font-weight: var(--fw-reg);
-	font-size: var(--fz-3);
-	line-height: calc(24/1440*100vw);
 }
 
 .about-row-2 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: url(../img/about-bg.png) center center / contain no-repeat;             
+	background: url(../img/about/about-bg.png) center center / contain no-repeat;           
 }
 .about-row-2 > img {
 	width: calc(524/1440*100vw);

@@ -10,7 +10,24 @@
 	.button-gradient {
 		font-size: var(--fz-mob-2);
 	}
+	.button-prev,
+	.button-next {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		z-index: 2;
+		border: none;
+		outline: none;
+		background-color: transparent;
+	}
 
+	.section-header {
+		justify-content: center;
+	}
+	.section-header > p {
+		display: none;
+	}
 	.title {
 		font-size: var(--fz-mob-5);
 		line-height: calc(40/390*100vw);
