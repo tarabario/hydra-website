@@ -67,7 +67,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: calc(282/390*100vw);
 }
 
 .tech-card:nth-child(1) > img {
