@@ -70,27 +70,27 @@
 	.hero-button-next {
 		right: calc(10/390*100vw);
 	}
-	.support-card {
+	.hero-card {
 		width: calc(277/390*100vw);
 		column-gap: calc(10/390*100vw);
 		padding: calc(20/390*100vw) calc(22/390*100vw);
 	}
-	.support-card:nth-child(2) {
+	.hero-card:nth-child(2) {
 		border: none;
 	}
-	.support-card:nth-child(1) img {
+	.hero-card:nth-child(1) img {
 		width: calc(30/390*100vw);
 	}
-	.support-card:nth-child(2) img {
+	.hero-card:nth-child(2) img {
 		width: calc(40/390*100vw);
 	}
-	.support-card:nth-child(3) img {
+	.hero-card:nth-child(3) img {
 		width: calc(48/390*100vw);
 	}
-	.support-card p {
+	.hero-card p {
 		display: none;
 	}
-	.support-card a {
+	.hero-card a {
 		white-space: normal;
 		font-size: var(--fz-mob-2);
 		line-height: calc(17/390*100vw);

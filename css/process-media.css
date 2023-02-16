@@ -12,6 +12,9 @@
 		width: calc(232/390*100vw);
 	}
 
+	.process-row-2 {
+		position: relative;
+	}
 	.process-card-viewer {
 		width: calc(200/390*100vw);
 		justify-content: start;
@@ -24,6 +27,7 @@
 
 	.process-button-prev,
 	.process-button-next {
+		position: absolute;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -35,10 +39,10 @@
 		bottom: calc(15/390*100vw)
 	}
 	.process-button-prev {
-		left: calc(18/390*100vw);
+		left: 0;
 	}
 	.process-button-next {
-		right: calc(18/390*100vw);
+		right: 0;
 	}
 	.process-button-prev > img,
 	.process-button-next > img {

@@ -16,8 +16,13 @@
 		overflow: hidden;
 	}
 
+	.service-row-2 {
+		position: relative;
+	}
+
 	.service-button-prev,
 	.service-button-next {
+		position: absolute;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -28,10 +33,10 @@
 		outline: calc(9/390*100vw) solid rgba(14, 14, 14, 0.32);
 	}
 	.service-button-prev {
-		left: calc(18/390*100vw);
+		left: 0;
 	}
 	.service-button-next {
-		right: calc(18/390*100vw);
+		right: 0;
 	}
 	.service-button-prev > img,
 	.service-button-next > img {

@@ -1,0 +1,118 @@
+#footer {
+	margin: calc(123/1440*100vw) 0 calc(60/1440*100vw);
+	padding: 0 calc(84/1440*100vw);
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-general {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo,
+.secondary-nav-left,
+.secondary-nav-right,
+.footer-social {
+	padding: calc(10/1440*100vw) 0;
+}
+
+.footer-logo {
+	width: calc(185/1440*100vw);
+}
+
+.footer-logo > img {
+	width: 100%;
+}
+
+nav[role="secondary"] {
+	display: flex;
+	border-width: 0 calc(6/1440*100vw) 0;
+	border-style: solid;
+	border-image-source: linear-gradient(180deg, var(--color-bg) 0%, #C0B7E8 34.9%, #8176AF 68.75%, var(--color-bg) 100%);
+	border-image-slice: 1;
+}
+
+.secondary-nav-left,
+.secondary-nav-right {
+	width: calc(300/1440*100vw);
+	display: flex;
+	justify-content: center;
+}
+
+.secondary-nav-left {
+	border-width: 0 calc(6/1440*100vw) 0 0;
+	border-style: solid;
+	border-image-source: linear-gradient(180deg, var(--color-bg) 0%, #C0B7E8 34.9%, #8176AF 68.75%, var(--color-bg) 100%);
+	border-image-slice: 1;
+}
+
+.secondary-nav-left > ul,
+.secondary-nav-right > ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	row-gap: calc(22/1440*100vw);
+}
+
+.secondary-nav-left > ul > li > a,
+.secondary-nav-right > ul > li > a,
+.footer-social > h2 {
+	font-weight: var(--fw-bold);
+	font-size: var(--fz-3);
+	line-height: calc(20/1440*100vw);
+	text-transform: uppercase;
+}
+
+.footer-social {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footer-social-links {
+	display: flex;
+	column-gap: calc(20/1440*100vw);
+	margin-top: calc(39/1440*100vw);
+}
+
+.footer-social-links > li > a {
+	width: calc(32/1440*100vw);
+	height: calc(32/1440*100vw);
+	border-radius: 50%;
+	background: #C0B7E8;
+	color: var(--color-bg);
+}
+
+.footer-social > .button-gradient {
+	width: calc(214/1440*100vw);
+	height: calc(48/1440*100vw);
+	margin-top: calc(39/1440*100vw);
+}
+
+#footer > hr {
+	width: 100%;
+	border: 1px solid;
+	border-image-source: linear-gradient(90deg, var(--color-bg) 0%, #C0B7E8 34.9%, #8176AF 68.75%, var(--color-bg) 100%);
+	border-image-slice: 1;
+	margin: calc(80/1440*100vw) 0 calc(50/1440*100vw);
+}
+
+.footer-copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-copyright-desktop {
+	font-weight: var(--fw-bold);
+	font-size: var(--fz-2);
+	line-height: calc(17/1440*100vw);
+	letter-spacing: 0.13em;
+	text-align: center;
+}
+
+.footer-copyright-mobile {
+	display: none;
+}

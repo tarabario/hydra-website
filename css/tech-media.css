@@ -27,8 +27,13 @@
 		display: none;
 	}
 
+	.tech-row-2 {
+		position: relative;
+	}
+
 	.tech-button-prev,
 	.tech-button-next {
+		position: absolute;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -39,10 +44,10 @@
 		outline: calc(9/390*100vw) solid rgba(14, 14, 14, 0.32);
 	}
 	.tech-button-prev {
-		left: calc(18/390*100vw);
+		left: 0;
 	}
 	.tech-button-next {
-		right: calc(18/390*100vw);
+		right: 0;
 	}
 	.tech-button-prev > img,
 	.tech-button-next > img {

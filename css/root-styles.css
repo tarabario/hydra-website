@@ -90,7 +90,7 @@ ul {
 	display: inline-block;
 	width: calc(200/1440*100vw);
 	height: calc(33/1440*100vw);
-	background: url(../icons/arrow-long.svg) 0 0 / contain no-repeat;
+	background: url(../img/arrow-long.svg) 0 0 / contain no-repeat;
 	margin-left: calc(20/1440*100vw);
 	transform: translateY(15%);
 }
