@@ -33,26 +33,26 @@ nav[role="primary"] {
 	width: calc(76/1440*100vw);
 }
 
-.nav-left {
+.primary-nav-left {
 	column-gap: calc(41/1440*100vw);
 }
 
-.nav-left li a {
+.primary-nav-left li a {
 	font-weight: var(--fw-bold);
 	font-size: var(--fz-1);
 	text-transform: uppercase;
 }
 
-.nav-right {
+.primary-nav-right {
 	column-gap: calc(38/1440*100vw);
 }
 
-.nav-right li a {
+.primary-nav-right li a {
 	width: calc(155/1440*100vw);
 	height: calc(48/1440*100vw);
 }
 
-.nav-right li:nth-child(1) a {
+.primary-nav-right li:nth-child(1) a {
 	font-weight: var(--fw-bold);
 	font-size: var(--fz-1);
 	text-transform: uppercase;

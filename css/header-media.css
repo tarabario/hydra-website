@@ -36,11 +36,11 @@
 		flex-direction: column;
 		justify-content: start;
 	}
-	nav[role="primary"] .nav-right {
+	nav[role="primary"] .primary-nav-right {
 		row-gap: calc(20/390*100vw);
 	}
 	nav[role="primary"] li a,
-	.nav-right li a:nth-child(1) {
+	.primary-nav-right li a:nth-child(1) {
 		width: calc(155/390*100vw);
 		height: calc(48/390*100vw);
 		font-size: var(--fz-mob-3);
