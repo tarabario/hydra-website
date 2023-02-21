@@ -1,0 +1,88 @@
+#optin {
+	margin-top: calc(112/1440*100vw);
+	padding: 0 calc(84/1440*100vw);
+}
+
+form {
+	width: 100%;
+	background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+	box-shadow: 0px calc(4/1440*100vw) calc(4/1440*100vw) rgba(0, 0, 0, 0.25);
+	border-radius: calc(100/1440*100vw);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: calc(90/1440*100vw) calc(110/1440*100vw) calc(84/1440*100vw);
+}
+
+form > .title {
+	text-align: center;
+} 
+form > .title > hr {
+	width: 80%;
+	border: 1px solid;
+	border-image-source: linear-gradient(90deg, var(--color-bg) 0%, #C0B7E8 34.9%, #8176AF 68.75%, var(--color-bg) 100%);
+	border-image-slice: 1;
+	margin: calc(30/1440*100vw) auto calc(21/1440*100vw);
+}
+form > .title > span {
+	text-transform: capitalize;
+}
+form > .title > span > br {
+	display: none;
+}
+
+fieldset {
+	margin: calc(65/1440*100vw) 0 0;
+	padding: 0;
+	border: none;
+	width: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: calc(35/1440*100vw);
+	justify-content: space-between;
+	
+}
+
+legend,
+label {
+	display: none;
+}
+
+fieldset input,
+fieldset textarea {
+	padding: calc(28/1440*100vw) calc(44/1440*100vw);
+	border: 2px solid #FFFFFF;
+	border-radius: calc(40/1440*100vw);
+	background: transparent;
+	font-weight: var(--fw-reg);
+	font-size: var(--fz-2);
+	line-height: calc(17/1440*100vw);
+	color: var(--color-main-light);
+}
+fieldset input::placeholder,
+fieldset textarea::placeholder {
+	color: rgba(255, 255, 255, .6);
+}
+
+fieldset input,
+fieldset textarea {
+	width: 100%;
+}
+fieldset textarea{
+	height: 13rem;
+	resize: none;
+}
+fieldset > p:nth-child(-n+5) {
+	width: 49%;
+}
+fieldset > p:not(:nth-child(-n+5)) {
+	width: 100%;
+}
+
+form button[type="submit"] {
+	border: none;
+	margin-top: calc(51/1440*100vw);
+	width: calc(214/1440*100vw);
+	height: calc(48/1440*100vw);
+}

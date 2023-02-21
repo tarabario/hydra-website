@@ -80,7 +80,7 @@ ul {
 .title {
 	font-weight: var(--fw-bold);
 	font-size: var(--fz-7);
-	line-height: calc(44/1440*100vw);
+	line-height: calc(52/1440*100vw);
 	text-transform: uppercase;
 	position: relative;
 }
@@ -92,7 +92,7 @@ ul {
 	height: calc(33/1440*100vw);
 	background: url(../img/arrow-long.svg) 0 0 / contain no-repeat;
 	margin-left: calc(20/1440*100vw);
-	transform: translateY(15%);
+	transform: translateY(25%);
 }
 .title > span {
 	font-weight: var(--fw-light);
